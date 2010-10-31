@@ -7,7 +7,7 @@
 =DESCRIPTION=
   lf lists the file and directory that matching the given pattern. It likes find (1) on UNIX like system, but find (1) use wildcard charcacter substitute for any other character or  characters  in
   file name, like the asterisk character ("`*`") substitutes for any zero or more characters, and the question mark ("`?`") substitutes for any one character. But lf use regular expression, it provide
-  more concise and flexible means for matching strings of path and file name.
+  more concise and flexible means for matching strings of path and file name. Another interesting feature is lf can colorize the output, like `ls --color` on UNIX.
 
 =OPTIONS=
   `-a, --all`
