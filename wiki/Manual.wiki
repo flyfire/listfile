@@ -34,8 +34,8 @@
   lf exits with status 0 if all files are processed successfully, greater than 0 if errors occur.
 
 =EXAMPLES=
-  # `lf "workspaces\project<[1-9]>\src\*.cpp" -e "copy <0> backup\<4>"`
-        Copy all c plus plus files in src under project1 .. project9 to backup folder, and save with the same file name.
+  # `lf "workspaces\project<[1-9]>\src\*.cpp" -e "copy <0> backup\<2,4>"`
+        Copy all c plus plus files in src under project1 .. project9 to `backup\prject*\src` folder, and save with same file name.
 
 =AUTHOR=
   Written by Zhang, Zepeng (Joe).
