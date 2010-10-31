@@ -10,32 +10,25 @@
   more concise and flexible means for matching strings of path and file name.
 
 =OPTIONS=
-{{{
-  -a, --all
-        Do not ignore hidden file
-  -A, --absolute-path
-        Always show absolute path
-  -e, --exec command
-        Execute command. The file/director names held can be
-        replayed by the sequences <1> .. <n>, <0> is replaced
-        with the full path name by the pattern. A range of
-        consecutive names can be specified by separating the
-        first and last numbers in the range with a hyphen. For
-        example, <1-n> is the same with <0>.
+  `-a, --all`
+        Do not ignore hidden file.
+  `-A, --absolute-path`
+        Always show absolute path.
+  `-e, --exec command`
+        Execute command. The file/director names held can be replayed by the sequences `<1>` .. `<n>`, `<0>` is replaced with the full path name by the pattern. A range of consecutive names can be specified by separating the first and last numbers in the range with a hyphen. For example, `<1-n>` is the same with `<0>`.
   -h, --help
         Display this help and exit
   -i, --ignore-case
         Ignore case
   -r, --relative-path
         Always show relative path
-}}}
 
 =PATTERN=
   The pattern expressions support both wildcard character and regular expressions, the regexp enclosed in angle brackets ("<" and ">").
 
 =ENVIROMENT VARIABLES=
   USERPROFILE
-        The %UserProfile% variable is  a  special system-wide environment variable found on Microsoft Windows NT and its derivatives. Its value is the location of the  current user's profile directory, in which is found that user's HKCU registry hive (NTUSER).
+        The `%UserProfile%` variable is  a  special system-wide environment variable found on Microsoft Windows NT and its derivatives. Its value is the location of the  current user's profile directory, in which is found that user's HKCU registry hive (NTUSER).
 
 =EXIT STATUS=
   lf exits with status 0 if all files are processed successfully, greater than 0 if errors occur.
