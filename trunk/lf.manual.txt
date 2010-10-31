@@ -24,7 +24,7 @@ OPTIONS
         replayed by the sequences <1> .. <n>, <0> is replaced
         with the full path name by the pattern. A range of
         consecutive names can be specified by separating the
-        first and last numbers in the range with a hyphen. For
+        first and last numbers in the range with a comma. For
         example, <1-n> is the same with <0>.
   -h, --help
         Display this help and exit.
@@ -51,9 +51,9 @@ EXIT STATUS
   greater than 0 if errors occur.
 
 EXAMPLES
-  lf "workspaces\project<[1-9]>\src\*.cpp" -e "copy <0> backup\<4>"
+  lf "workspaces\project<[1-9]>\src\*.cpp" -e "copy <0> backup\<2,4>"
         Copy all c plus plus files in src under project1 .. project9
-        to backup folder, and save with the same file name.
+        to backup\prject*\src folder, and save with same file name.
 
 AUTHOR
   Written by Zhang, Zepeng (Joe).
